@@ -22,6 +22,8 @@ var writeReadme = function (data) {
     data2Write += "\n";
     data2Write += createSection("Description", data.description)
     data2Write += createSection("Installation instructions", data.installation)
+    data2Write += createSection("Github repo", data.github)
+
     fs.writeFile('readme-out.md', data2Write, 'utf8', err => {
         if (err) return console.log(err);
         return console.log("We finished writing the file.");

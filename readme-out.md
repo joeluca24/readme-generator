@@ -1,10 +1,14 @@
-# joey the great
+# Readme Genertaor
 
 ## Description
 
-the description is a generator top make readmes
+things happen here
 
 ## Installation instructions
 
-type in yarn install
+yes yes i did 
+
+## Github repo
+
+https://github.com/joeluca24/readme-generator
 

@@ -3,7 +3,24 @@ const fs = require('fs');
 const writer = require('./writer/readme.js');
 
 inquirer.prompt([
+    // WHEN I am prompted for information about my application repository
     {
+        
+        type: 'input',
+        message: "What is your github repo for the application ?",
+        name: 'github',
+        validate: github => {
+            if(github.length < 10){
+                return "github link is too short.";
+            }
+            else{
+                // all validation checks passed
+                return true;
+            }
+        }
+    },
+    {
+        
         type: 'input',
         message: "What is your project title?",
         name: 'title',
