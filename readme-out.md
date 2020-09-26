@@ -1,10 +1,10 @@
-# saSadSacSac
+# Readme Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-scAScascAsc
+An application that genertates read me information 
 
 ## Table of Contents
 
@@ -22,15 +22,15 @@ scAScascAsc
 
 ## Installation instructions
 
-ascAScAScASc
+`npm install`
 
 ## Github repo
 
-sdcAefSEef
+https://github.com/joeluca24/readme-generator
 
 ## Usage
 
-AScAScAScSAc
+`node index`
 
 ## License
 
@@ -38,13 +38,13 @@ This Application is covered under an MIT license
 
 ## Contributing
 
-AScAScAScAS
+Joseph Luca
 
 ## Tests
 
-ScAScAScSC
+There were no tests for this app.
 
 ## Questions
 
-Please message me your questions atAScAScAScSAc on github or at this AscAScASc.
+Please message me your questions atjoeluca24 on github or at this joeluca24@gmail.com.
 
