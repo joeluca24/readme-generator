@@ -84,9 +84,10 @@ inquirer.prompt([
     // License, 
     {
         
-        type: 'input',
-        message: " What License is the app using ?",
+        type: 'list',
+        message: " What License's is the app using ?",
         name: 'license',
+        choices: ["MIT","GPL","APACHE"],
         validate: license => {
             if(license.length < 10){
                 return "license input is too short.";
@@ -106,7 +107,7 @@ inquirer.prompt([
         message: " Who contributed in making this app ?",
         name: 'Contributing',
         validate: Contributing => {
-            if(Contributing.length < 10){
+            if(Contributing.length < 3){
                 return "Contribution input is too short.";
             }
             else{
@@ -120,7 +121,7 @@ inquirer.prompt([
     {
         
         type: 'input',
-        message: " Which tests were used in?",
+        message: " Which tests were used in this app?",
         name: 'Tests',
         validate:Tests => {
             if(Tests.length < 10){
@@ -135,23 +136,39 @@ inquirer.prompt([
 
     // and Questions
     {
-        
-        
-        
-        type: 'input',
-        message: " Which tests were used in?",
-        name: 'tests',
-        validate:Tests => {
-            if(Tests.length < 10){
-                return "test input is too short.";
-            }
-            else{
-                // all validation checks passed
-                return true;
-            }
-        }
-    },
 
+    type: 'input',
+    message: " What is your github username?",
+    name: 'username',
+    validate:username => {
+        if(username.length < 3){
+            return "github username is  too short.";
+        }
+        else{
+            // all validation checks passed
+            return true;
+        }
+    }
+},
+{
+
+    type: 'input',
+    message: " What is your email address?",
+    name: 'email',
+    validate:email => {
+        if(email.length < 3){
+            return " email is  too short.";
+        }
+        else{
+            // all validation checks passed
+            return true;
+        }
+    }
+},
+    
+        
+        
+        
        
    
 ]).then( response => {
